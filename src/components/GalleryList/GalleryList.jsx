@@ -1,13 +1,17 @@
-import GalleryItem from "../GalleryItem/GalleryItem"
+import { useState } from 'react'
+// import GalleryItem from "../GalleryItem/GalleryItem"
 
-function GalleryList() {
+function GalleryList(props) {
     
 
     return (
-        <>
-        <p>Gallery goes here</p>
-        <GalleryItem />
-        </>
+        <div>
+            <p>Gallery goes here</p>
+            {props.Gallery.map(image => 
+                <img src={image.path}></img>
+            )}
+
+        </div>
     )
 }
 

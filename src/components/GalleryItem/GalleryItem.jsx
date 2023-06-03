@@ -1,7 +1,10 @@
-function GalleryItem() {
+function GalleryItem(props) {
     
     return (
-        <p>Item</p>
+        <div>
+        <p>GalleryItem</p>
+        <img src={props.path}></img>
+        </div>
     )
 }
 
