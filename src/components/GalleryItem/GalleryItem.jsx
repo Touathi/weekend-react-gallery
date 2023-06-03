@@ -1,12 +1,19 @@
 import { useState } from 'react'
+import axios from 'axios'
 
-function GalleryItem(props) {
+function GalleryItem(props ) {
     
     const [selected, setSelected] = useState(false)
-    
 
     const likeMyPic = () => {
-        
+        axios.put(`/gallery/like/${props.image.id}`)
+        .then ( response => {
+            console.log(response);
+            {props.getGallery()}
+        })
+        .catch ( err => {
+            console.log(err);
+        })
     }
 
 
@@ -19,9 +26,9 @@ function GalleryItem(props) {
                 <img src={props.path}></img>
                 )
             }
-            
         </div>
-        <button>like!!</button>
+        <button onClick={likeMyPic}>like!!</button>
+        <p>{props.likes} liked this!!!</p>
         </>
     )
 }

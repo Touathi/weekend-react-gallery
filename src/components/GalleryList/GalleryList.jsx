@@ -10,6 +10,8 @@ function GalleryList(props) {
             {props.Gallery.map(image => 
                 <GalleryItem 
                     key={image.id}
+                    getGallery={props.getGallery}
+                    image={image}
                     path={image.path}
                     description={image.description}
                     likes={image.likes}
