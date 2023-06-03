@@ -19,16 +19,19 @@ function GalleryItem(props ) {
 
     return (
         <>
-        <div onClick={ () => setSelected( !selected )}>
-            { selected ? ( 
-                <p>{props.description}</p>
-                ) : ( 
-                <img src={props.path}></img>
-                )
-            }
+        
+        <div>
+            <div onClick={ () => setSelected( !selected )}>
+                { selected ? ( 
+                    <p>{props.description}</p>
+                    ) : ( 
+                    <img src={props.path}></img>
+                    )
+                }
+            </div>
+            <button onClick={likeMyPic}>like!!</button>
+            <p>{props.likes} liked this!!!</p>
         </div>
-        <button onClick={likeMyPic}>like!!</button>
-        <p>{props.likes} liked this!!!</p>
         </>
     )
 }

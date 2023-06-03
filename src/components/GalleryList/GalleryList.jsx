@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import GalleryItem from "../GalleryItem/GalleryItem"
-
+import './GalleryList.css'
 function GalleryList(props) {
     
 
     return (
-        <div>
-            <p>Gallery goes here</p>
+        <>
+        <div className="image-block">
             {props.Gallery.map(image => 
                 <GalleryItem 
                     key={image.id}
@@ -15,11 +15,10 @@ function GalleryList(props) {
                     path={image.path}
                     description={image.description}
                     likes={image.likes}
-
                 />
             )}
-
         </div>
+        </>
     )
 }
 
