@@ -1,5 +1,5 @@
 import { useState } from 'react'
-// import GalleryItem from "../GalleryItem/GalleryItem"
+import GalleryItem from "../GalleryItem/GalleryItem"
 
 function GalleryList(props) {
     
@@ -8,7 +8,13 @@ function GalleryList(props) {
         <div>
             <p>Gallery goes here</p>
             {props.Gallery.map(image => 
-                <img src={image.path}></img>
+                <GalleryItem 
+                    key={image.id}
+                    path={image.path}
+                    description={image.description}
+                    likes={image.likes}
+
+                />
             )}
 
         </div>
