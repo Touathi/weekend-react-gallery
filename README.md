@@ -21,9 +21,6 @@ Suspendisse euismod volutpat aliquet. Maecenas vulputate mauris in pellentesque 
 
 To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](www.heroku.com)
 
-## Screen Shot
-
-Include one or two screen shots of your project here (optional). Remove if unused.
 
 ### Prerequisites
 
@@ -69,9 +66,4 @@ _Note, include this only if you have a license file. GitHub will generate one fo
 Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. (Thank your people)
 
 ## Support
-If you have suggestions or issues, please email me at [youremail@whatever.com](www.google.com)
-## Description
-
-Your project description goes here. What problem did you solve? How did you solve it?
-
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+If you have suggestions or issues, please email me at [touathi@gmail.com](www.google.com)
