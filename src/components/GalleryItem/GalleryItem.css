@@ -1,0 +1,8 @@
+.threePerRow {
+    flex: 33%;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import axios from 'axios'
+import './GalleryItem.css'
 
 function GalleryItem(props ) {
     
@@ -20,7 +21,7 @@ function GalleryItem(props ) {
     return (
         <>
         
-        <div>
+        <div className="threePerRow">
             <div onClick={ () => setSelected( !selected )}>
                 { selected ? ( 
                     <p>{props.description}</p>
