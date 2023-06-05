@@ -11,7 +11,7 @@
 
 ## Description
 
-_Duration: 2 Week Sprint_
+_Duration: 2 Day Sprint_
 
 Directly above this is how long it took you to develop the project. Your project description goes here. What problem did you solve? How did you solve it? 
 
